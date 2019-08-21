@@ -44,7 +44,7 @@ Sub stock_summary_generator()
              Else 'if there's a mismatch between ticker at row i and row (i+1) that means the ticker switched but we'd still want the volume from the last row to be added before the switch
                  total_volume = total_volume + ws.Cells(i, 7).Value
                  ws.Range("I" & summary_table_row).Value = ws.Cells(i, 1).Value  ' Print ticker symbol in column I, starting at row 2
-                 ws.Range("N" & summary_table_row).Value = total_volume 'Print the total volume in column J, starting at row 2
+                 ws.Range("N" & summary_table_row).Value = total_volume 'Print the total volume in column N, starting at row 2
                  total_volume = 0 'reset the total at 0 afeter printing the ticker symbol and total volume
                  
                  close_price = ws.Cells(i, 6).Value 'the closing price for the current ticker will be the last row before the switch
@@ -141,6 +141,7 @@ Sub stock_summary_generator()
              
          Next j
          
+         'putting the summary results at specific locations on the spreadsheet
          ws.Range("P2").Value = "Greatest % increase"
          ws.Range("Q2").Value = greatest_increase_ticker
          ws.Range("R2").Value = FormatPercent(greatest_increase, 2)
@@ -153,7 +154,8 @@ Sub stock_summary_generator()
          ws.Range("Q4").Value = greatest_volume_ticker
          ws.Range("R4").Value = greatest_volume
          
-         ws.Columns("I:R").AutoFit
+         ws.Columns("I:R").AutoFit 'adjust the column width so the table is easier to read
          
     Next ws
 End Sub
+
