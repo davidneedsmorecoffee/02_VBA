@@ -20,4 +20,4 @@ The analysis generated the following information:
 The output was also conditionally formatted to automatically highlight positive change in green and negative change in red.
 Output also included identification of the stock with the "Greatest % increase", "Greatest % Decrease" and "Greatest total volume".
 
-Please note that the original files analyzed were in Excel format and were too big to upload to GitHub. As such, only the VBA code was uploaded to the repo.
+Please note that the original files analyzed were in Excel format and were too big to upload to GitHub. As such, only the VBA code was uploaded to the repo, as well as screenshots of the sample outputs.
