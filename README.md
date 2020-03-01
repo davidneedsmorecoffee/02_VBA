@@ -1,4 +1,4 @@
-# VBA Script
+# VBA Script For Summarizing Stock Data
 
 Created a script that will loop through all the stocks data in multiple sheets in a single Excel file. Each sheet included data for multiple stocks for that given year. Three years worth of data were analyzed. 
 
