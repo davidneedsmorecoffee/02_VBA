@@ -1,6 +1,6 @@
 # VBA Script
 
-Created a script that will loop through all the stocks data in multiple sheets in a single Excel file.
+Created a script that will loop through all the stocks data in multiple sheets in a single Excel file. Each sheets included data for multiple stocks for that given year.
 
 The analysis generated the following information:
 - The ticker symbol.
