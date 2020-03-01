@@ -3,14 +3,13 @@
 Created a script that will loop through all the stocks data in multiple sheets in a single Excel file. Each sheet included data for multiple stocks for that given year. Three years worth of data were analyzed. 
 
 The different sheets ranged from 700,000 to 800,000 rows of data. Seven columns were available for analysis for each year: 
-- <ticker>
-- <date>	
-- <open>	
-- <high>
-- <low>	
-- <close>	
-- <vol>
-
+- ticker (ticker symbol)
+- date	
+- open (opining price)
+- high (highlest price of day)
+- low (lowest price of day)
+- close (closing price)
+- vol (volume)
 
 The analysis generated the following information:
 - The ticker symbol.
